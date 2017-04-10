@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">swim3</string>
+    <string name="settings">Ustawienia</string>
+    <string name="font_color">Kolor tekstu</string>
+    <string name="font_size">Rozmiar tekstu</string>
+    <string name="size_switch">Czy tekst ma być duży?</string>
+    <string name="color_switch">Czy tekst ma być kolorowy?</string>
+    <string name="back">Powrót</string>
+    <string name="back_and_save">Powrót i zapis</string>
+    <string name="night_mode">Tryb nocny</string>
+    <string name="day_mode">Tryb dzienny</string>
+    <string name="save_data">Wprowadź dane</string>
+    <string name="browse_data">Przeglądaj dane</string>
+    <string name="add">Dodaj film</string>
+</resources>
