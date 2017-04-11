@@ -30,37 +30,7 @@ public class BrowseActivity extends Activity {
         final ArrayList<Movie> list = MainActivity.base.base;
 
         ListView lv = (ListView) findViewById(R.id.list_view);
-        ListAdapter la = new BaseAdapter() {
-            LayoutInflater layoutInflater;
-
-            @Override
-            public int getCount() {
-                return list.size();
-            }
-
-            @Override
-            public Object getItem(int position) {
-                return list.get(position);
-            }
-
-            @Override
-            public long getItemId(int position) {
-                return 0;
-            }
-
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                layoutInflater = LayoutInflater.from(getBaseContext());
-
-                convertView= layoutInflater.inflate(android.R.layout.simple_list_item_1, null);
-
-                TextView txt=(TextView)convertView.findViewById(R.id.textView6);
-
-                txt.setText(list.get(position).toString());
-
-                return convertView;
-            }
-        };
+        ListAdapter la = new MyAdapter(this, list);
         lv.setAdapter(la);
     }
 }
