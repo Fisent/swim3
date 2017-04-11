@@ -36,6 +36,7 @@ public class Database implements Serializable {
             FileInputStream fis = activity.openFileInput("base");
             ObjectInputStream is = new ObjectInputStream(fis);
             ArrayList<Movie> simpleClass = (ArrayList<Movie>) is.readObject();
+            base = simpleClass;
             is.close();
             fis.close();
         }

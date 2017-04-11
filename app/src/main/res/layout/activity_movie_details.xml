@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="lukzieniewicz.gmail.com.swim3.MovieDetailsActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailName"
+        android:layout_alignRight="@+id/detailName"
+        android:layout_alignEnd="@+id/detailName"
+        android:layout_marginTop="80dp"
+        android:id="@+id/detailDirector"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailDirector"
+        android:layout_alignRight="@+id/detailDirector"
+        android:layout_alignEnd="@+id/detailDirector"
+        android:layout_marginTop="80dp"
+        android:id="@+id/detailYear"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <TextView
+        android:text="Szczegóły filmu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:id="@+id/detailName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="Reżyser:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_alignBaseline="@+id/detailDirector"
+        android:layout_alignBottom="@+id/detailDirector"
+        android:layout_toLeftOf="@+id/detailDirector"
+        android:layout_toStartOf="@+id/detailDirector"/>
+
+    <TextView
+        android:text="Tytuł:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignBaseline="@+id/detailName"
+        android:layout_alignBottom="@+id/detailName"
+        android:layout_toLeftOf="@+id/detailName"
+        android:layout_toStartOf="@+id/detailName"/>
+
+    <TextView
+        android:text="Rok wydania:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_alignBaseline="@+id/detailYear"
+        android:layout_alignBottom="@+id/detailYear"
+        android:layout_toLeftOf="@+id/detailYear"
+        android:layout_toStartOf="@+id/detailYear"/>
+</RelativeLayout>
